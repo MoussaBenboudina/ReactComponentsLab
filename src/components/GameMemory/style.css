@@ -1,0 +1,15 @@
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.rotate180 {
+  transform: rotateY(-180deg);
+}
+
+.backface-visibility {
+  backface-visibility: hidden;
+}
+
+.rotateY180 {
+  transform: rotateY(180deg);
+}
