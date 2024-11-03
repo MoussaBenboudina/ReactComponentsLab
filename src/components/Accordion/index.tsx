@@ -24,7 +24,7 @@ const Accordion = () => {
   return (
     <>
       <div className="accordion flex px-2 items-center gap-2 flex-col w-full min-h-screen text-black bg-white ">
-        <div className="">Challenge 1: Accordion</div>
+        <div className="">Accordion</div>
         <button
           className={`${
             multiple.length

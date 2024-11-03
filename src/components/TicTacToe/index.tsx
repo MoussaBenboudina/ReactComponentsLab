@@ -2,11 +2,10 @@ import { useState } from "react";
 import { calculateWinner } from "./calculateWinner";
 
 const TicTacToe = () => {
-
   const [squares, setSquares] = useState<(string | null)[]>(
     Array(9).fill(null)
   );
-  
+
   const [next, setNext] = useState<"x" | "o">("x");
   const [scoreX, setScoreX] = useState<number>(0);
   const [scoreY, setScoreY] = useState<number>(0);
@@ -50,7 +49,7 @@ const TicTacToe = () => {
       <div
         className={`flex justify-center items-center w-full h-screen flex-col gap-2 bg-purple-500`}
       >
-        <div className="text-gray-100">challeng 2 :Tic Tac Toe </div>
+        <div className="text-gray-100">Tic Tac Toe </div>
         <div className="text-md  rounded-md shadow-lg bg-gray-500 w-60 h-8 flex justify-center items-center">
           next player : <span>{next == "x" ? "o" : "x"}</span>
         </div>

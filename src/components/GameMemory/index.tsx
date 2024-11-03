@@ -50,7 +50,7 @@ const GameMemory = () => {
   };
 
   return (
-    <div className="w-full h-screenbg-purple-500 flex  flex-col justify-center items-center">
+    <div className="w-full h-screenbg-purple-500 flex  flex-col justify-center items-center ">
       <div className="flex gap-4 justify-center items-center mb-6 bg-orange-400 rounded-lg px-4 py-2 shadow-md">
         {" "}
         <h1>{matchedCards.length / 2} / 10</h1>
@@ -63,7 +63,7 @@ const GameMemory = () => {
         </button>
       </div>
 
-      <div className="w-[800px] bg-orange-500 flex flex-wrap gap-4 p-4 rounded-lg justify-center items-center">
+      <div className="w-[380px] lg:w-[800px] xl:w-[800px] bg-orange-500 flex flex-wrap gap-2 lg:gap-4 p-4 rounded-lg justify-center items-center">
         {items.map((card) => (
           <div key={card.id} onClick={() => handleClick(card.id)}>
             <Card
